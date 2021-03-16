@@ -30,5 +30,6 @@ api.add_resource(Item, '/item/<string:name>')
 api.add_resource(UserRegister, '/register')
 
 if __name__ == '__main__':
+    # main
     db.init_app(app)
     app.run(port=5000, debug=True)
